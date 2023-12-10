@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <MobileNav />
         </div>
         <div className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
-          <div className="bg-[url('/Valtra_Q_series.jpg')] bg-cover h-96 bg-center mt-5"></div>
+          <div className="bg-[url('/Valtra_Q_Series.jpg')] bg-cover h-96 bg-center mt-5"></div>
           <div className="mt-2 hidden md:block">
             <PcNav />
           </div>

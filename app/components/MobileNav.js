@@ -13,11 +13,11 @@ const NAV_ITEMS = [
   },
   {
     label: "Huolto",
-    page: "/huolto",
+    page: "/huolto/",
   },
   {
     label: "Yhteys",
-    page: "/yhteys",
+    page: "/yhteys/",
   },
 ]
 

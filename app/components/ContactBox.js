@@ -1,4 +1,9 @@
-import React from 'react'
+"use client" 
+
+import React from 'react';
+import {
+  AiOutlineInstagram,
+} from "react-icons/ai"
 
 const ContactBox = () => {
   return (
@@ -9,6 +14,12 @@ const ContactBox = () => {
         <p className="font-normal text-gray-700 md:break-all">konehuoltoj.filppula@hotmail.fi</p>
         <p className="font-normal text-gray-700">Pesolantie 304</p>
         <p className="font-normal text-gray-700">62300 HÄRMÄ</p>
+        <a href="https://www.instagram.com/konehuolto_filppula/" rel="noreferrer" target="_blank" className='inline-block mt-2'>
+            <AiOutlineInstagram
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-800"
+              size={30}
+            />
+        </a>
     </div>
   )
 }

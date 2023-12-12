@@ -16,6 +16,10 @@ const NAV_ITEMS = [
     page: "/huolto/",
   },
   {
+    label: "Vuokraus",
+    page: "/vuokraus/",
+  },
+  {
     label: "Yhteys",
     page: "/yhteys/",
   },

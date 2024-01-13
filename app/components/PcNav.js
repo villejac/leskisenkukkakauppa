@@ -35,7 +35,7 @@ export default function Navbar() {
             <Link href="/" style={{cursor:"pointer"}}>
               <div className="container flex items-center space-x-2">
                 {/* <h2 className="text-2xl font-bold">Konehuolto J. Filppula</h2> */}
-                <h1 className="italic text-2xl lg:text-4xl font-extrabold leading-none tracking-tight text-gray-900">Konehuolto J. Filppula</h1>
+                <h1 className="italic text-2xl lg:text-4xl font-extrabold leading-none tracking-tight text-gray-900">Leskisen kukkakauppa</h1>
               </div>
             </Link>
         </div>

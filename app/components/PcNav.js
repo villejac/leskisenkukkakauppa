@@ -1,26 +1,21 @@
 "use client" 
 
 import React from "react"
-import { useState } from "react"
 import  Link  from "next/link"
 import { usePathname } from "next/navigation"
 
-const NAV_ITEMS = [
+export const NAV_ITEMS = [
   {
     label: "Etusivu",
     page: "/",
   },
   {
-    label: "Huolto",
-    page: "/huolto/",
+    label: "Galleria",
+    page: "/galleria/",
   },
   {
-    label: "Vuokraus",
-    page: "/vuokraus/",
-  },
-  {
-    label: "Yhteys",
-    page: "/yhteys/",
+    label: "Yhteystiedot",
+    page: "/yhteystiedot/",
   },
 ]
 
@@ -34,8 +29,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-5">
             <Link href="/" style={{cursor:"pointer"}}>
               <div className="container flex items-center space-x-2">
-                {/* <h2 className="text-2xl font-bold">Konehuolto J. Filppula</h2> */}
-                <h1 className="italic text-2xl lg:text-4xl font-extrabold leading-none tracking-tight text-gray-900">Leskisen kukkakauppa</h1>
+                <h1 className="font-culpa text-2xl lg:text-4xl font-bold text-purple-500">Leskisen kukkakauppa</h1>
               </div>
             </Link>
         </div>

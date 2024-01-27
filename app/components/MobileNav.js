@@ -5,30 +5,17 @@ import { useState } from "react"
 import  Link  from "next/link"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 import { usePathname } from "next/navigation"
-
-const NAV_ITEMS = [
-  {
-    label: "Etusivu",
-    page: "/",
-  },
-  {
-    label: "Huolto",
-    page: "/huolto/",
-  },
-  {
-    label: "Vuokraus",
-    page: "/vuokraus/",
-  },
-  {
-    label: "Yhteys",
-    page: "/yhteys/",
-  },
-]
+import { NAV_ITEMS } from "./PcNav"
 
 export default function Navbar() {
 
   const [navbar, setNavbar] = useState(false)
   const pathname = usePathname();
+
+  const handleLinkClick = () => {
+    setNavbar(!navbar);
+    window.document.scrollingElement?.scrollTo(0, 0);
+  }
 
   return (
     <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-slate-50">
@@ -37,8 +24,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3">
             <Link href="/" style={{cursor:"pointer"}}>
               <div className="container flex items-center space-x-2">
-                {/* <h2 className="text-2xl font-bold">Konehuolto J. Filppula</h2> */}
-                <h1 className="italic text-2xl lg:text-4xl font-extrabold leading-none tracking-tight text-gray-900">Konehuolto J. Filppula</h1>
+                <h1 className="font-culpa text-2xl lg:text-4xl font-bold text-purple-500">Leskisen kukkakauppa</h1>
               </div>
             </Link>
             <div>
@@ -68,7 +54,8 @@ export default function Navbar() {
                     className={
                       `block text-neutral-900 hover:text-neutral-500 ${pathname == item.page ? "text-orange-600" : ""} font-bold`
                     }
-                    onClick={() => setNavbar(!navbar)}
+                    // onClick={() => setNavbar(!navbar)}
+                    onClick={handleLinkClick}
                   >
                     {item.label}
                   </Link>

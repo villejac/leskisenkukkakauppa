@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-[url('/kukkataustakuva.jpg')] bg-left-bottom bg-no-repeat bg-bodyBg bg-fixed`}>
+      <body className={`${inter.className} min-h-screen md:bg-[url('/taustakuva.jpg')] bg-cover bg-no-repeat bg-fixed bg-gradient-to-r from-fuchsia-300 via-pink-300 to-pink-500`}>
         <div className="block lg:hidden mt-28">
           <MobileNav />
         </div>

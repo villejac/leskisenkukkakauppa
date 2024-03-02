@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaPhone, FaEnvelope, FaMapMarker } from "react-icons/fa";
 
 const Footer = () => {
   const openInfo = () => {
@@ -13,11 +13,23 @@ const Footer = () => {
     <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl mt-28 bg-white border border-gray-200 rounded-lg shadow mb-10">
       <div className="mx-auto p-4 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between">
         <div className="flex flex-col items-center justify-center space-x-1 text-neutral-500">
-            <p className="font-bold">Leskisen kukkakauppa ja hautaustoimisto</p>
-            <p>Päämajantie 3</p>
-            <p>62375 Kauhava</p>
-            <p>pasi.syynimaa@netikka.fi</p>
-            <a class="font-medium text-blue-600 dark:text-blue-500 mt-1" href="tel:0500266466">0500266466</a>
+            <p className="font-bold mb-2">Leskisen kukkakauppa ja hautaustoimisto</p>
+            <div className="flex gap-2 items-center">
+              <FaMapMarker size={20} />
+              <p>Päämajantie 3,</p>
+              <p>62375 Kauhava</p>
+            </div>
+            <div className="flex gap-2 items-center mt-1">
+              <FaEnvelope size={20} />
+              <p>leskisenkukkakauppa@netikka.fi</p>
+            </div>
+            <div className="flex gap-2 items-center mt-2">
+            <FaPhone size={20} />
+              <div className="flex flex-col">
+                <a className="font-medium text-blue-600 dark:text-blue-500 mt-1" href="tel:0500266466">0500266466</a>
+                <a className="font-medium text-blue-600 dark:text-blue-500 mt-1" href="tel:064846299">06-4846299</a>
+              </div>
+            </div>
         </div>
         <div>
           <div className="flex flex-col items-center justify-center space-x-1 mt-2">

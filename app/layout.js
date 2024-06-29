@@ -11,7 +11,7 @@ export const metadata = {
     template: '%s | Leskisen kukkakauppa',
     default: 'Leskisen kukkakauppa',
   },
-  description: 'Tervetuloa Kauniiden Kukkien maailmaan Ylihärmässä! Tarjoamme kukkakimput, hautalaitteet, juhlakoristelut ja morsiussidonnat. Tilaa nyt raikkaat kukat kaikkiin tilaisuuksiin!',
+  description: 'Ylihärmän keskustassa sijaitseva hautaustoimisto lämpimällä ja asiantuntevalla palvelulla. Kukkakaupassamme on runsas valikoima kukkakimppuja, asetelmia ja ruukkukukkia.',
 }
 
 export default function RootLayout({ children }) {
